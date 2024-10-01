@@ -1,0 +1,58 @@
+                                        "Hello Youxelers"
+                                 "Amazon Automation Framework"
+
+
+1. Project Description
+This is a Selenium-based Test Automation Framework for testing the key functionalities of Amazon.
+The framework uses the Page Object Model (POM) design pattern and incorporates modular test scripts,
+making it highly scalable and maintainable.
+
+2-The framework covers the following scenarios:
+
+Searching for products using different keywords.
+Sorting and filtering product listings.
+Adding items to the shopping cart.
+Verifying cart totals and applying discounts if (but i removed it in the second commit as its blocks the running (useless)).
+
+3-Project Structure
+src
+ ├── main
+ │   ├── java
+ │   │   ├── com.amazon.pages
+ |   |       -----BasePage.java          # Base class with common WebDriver actions
+ │   │   │   ├── HomePage.java          # Page class for Amazon's homepage
+ │   │   │   ├── ProductResultsPage.java# Page class for search results page
+ │   │   │   └── ShoppingCartPage.java  # Page class for shopping cart
+ │   │   ├── utils
+ │   │   │   ├── ConfigReader.java      # Utility class to read configuration properties
+ │   │   │   └── DriverManager.java     # Utility class to manage WebDriver instance
+ │
+ ├── test
+ │   ├── java
+ │   │   ├── com.amazon.tests
+ │   │   │   ├── BaseTest.java          # Base test class for setup/teardown of WebDriver
+ │   │   │   ├── SearchTest.java        # Test class for search scenarios
+ │   │   │   └── ShoppingCartTest.java  # Test class for shopping cart scenarios
+ │
+ ├── resources
+ │   └── config.properties              # Configuration file for URL, browser, timeouts, etc.
+ └── pom.xml                             # Maven configuration file for dependencies
+
+4- Technologies and Tools Used
+  Programming Language: Java 11
+  Testing Framework: TestNG
+  Automation Tool: Selenium WebDriver with DDT
+  Browser Driver Management: WebDriverManager
+  Reporting Tool: Allure Reports
+  Build Tool: Maven
+  Design Pattern: Page Object Model (POM)
+  IDE: IntelliJ IDEA (Recommended)
+
+5-Setting Up the Project
+Clone the repository to your local machine.
+Open the project in your IDE (e.g., IntelliJ ).
+Navigate to the config.properties file under src/main/resources and configure the following properties:
+Running Tests Using TestNG
+Navigate to the src/test/java/com/amazon/tests folder and open the testng.xml file.
+
+BR
