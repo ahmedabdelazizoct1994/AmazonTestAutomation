@@ -24,7 +24,7 @@ public class SearchTest extends BaseTest {
         String category = ConfigReader.getProperty("searchCategory");
         String keyword = ConfigReader.getProperty("searchKeyword");
         String country = ConfigReader.getProperty("country");
-    //    homePage.selectCountryAndConfirm(country);
+        homePage.selectCountryAndConfirm(country);
 
         // Step 1: Select the category and search for a product by keyword
         homePage.selectCategoryByValue(category);       // Select category from dropdown

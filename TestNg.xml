@@ -4,6 +4,7 @@
     <test name="Search Tests">
         <classes>
             <class name="com.amazon.tests.SearchTest"/>
+            <class name="com.amazon.tests.ShoppingCartTest"/>
         </classes>
     </test>
 </suite>
